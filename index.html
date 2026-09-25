@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock & Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Digital Clock & Alarm</h1>
+        <button id="format-toggle" class="btn-secondary">Switch to 24H</button>
+    </header>
+
+    <main>
+        <!-- Clock Section -->
+        <section class="clock-container">
+            <div id="live-clock" class="time-display">--:--:--</div>
+            <div id="live-date" class="date-display">Loading Date...</div>
+        </section>
+
+        <!-- Alarm Form Section -->
+        <section class="form-container">
+            <h2>Set Alarm</h2>
+            <form id="alarm-form">
+                <div class="input-group">
+                    <label for="alarm-time">Time:</label>
+                    <input type="time" id="alarm-time" required>
+                </div>
+                <div class="input-group">
+                    <label for="alarm-label">Label (Optional):</label>
+                    <input type="text" id="alarm-label" placeholder="e.g., Wake up">
+                </div>
+                <button type="submit" id="add-alarm-btn">Add Alarm</button>
+                <p id="form-error" class="error-msg"></p>
+            </form>
+        </section>
+
+        <!-- Alarm List Section -->
+        <section class="alarms-container">
+            <div class="list-header">
+                <h2>Active Alarms</h2>
+                <button id="clear-all-btn" class="btn-danger">Clear All</button>
+            </div>
+            <ul id="alarm-list">
+                <!-- Alarms will be injected here via JS -->
+            </ul>
+            <p id="no-alarms-msg" class="empty-state">No alarms set.</p>
+        </section>
+    </main>
+</body>
+</html>
