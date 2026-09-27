@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* This sets the dark background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.time-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: #00ffcc;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+.date-display {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+button {
+    background-color: #00ffcc;
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #00ccaa;
+}
